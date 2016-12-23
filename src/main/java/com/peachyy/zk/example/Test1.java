@@ -25,7 +25,7 @@ public class Test1 {
     private static CountDownLatch latch = new CountDownLatch(1);
     private static CountDownLatch latch2 = new CountDownLatch(1);
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-            zk = new ZooKeeper("119.84.15.168:2181", DEFAULT_SESSION_TIMEOUT,
+            zk = new ZooKeeper("localhost:2181", DEFAULT_SESSION_TIMEOUT,
                     new Watcher() {
 
                         @Override
